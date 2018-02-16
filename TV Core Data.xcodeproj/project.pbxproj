@@ -13,9 +13,12 @@
 		825194572033DED600B818F4 /* TV_Core_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 825194552033DED600B818F4 /* TV_Core_Data.xcdatamodeld */; };
 		825194592033DED600B818F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825194582033DED600B818F4 /* Assets.xcassets */; };
 		8251945C2033DED600B818F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8251945A2033DED600B818F4 /* LaunchScreen.storyboard */; };
+		825194642033DFCD00B818F4 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825194632033DFCD00B818F4 /* CoreDataHandler.swift */; };
+		E6AB5E33DB93B07F93352614 /* Pods_TV_Core_Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D725EFD045ADFB5273DCA66F /* Pods_TV_Core_Data.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78AFCDF6B7A90A7A724497B7 /* Pods-TV Core Data.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Core Data.release.xcconfig"; path = "Pods/Target Support Files/Pods-TV Core Data/Pods-TV Core Data.release.xcconfig"; sourceTree = "<group>"; };
 		8251944B2033DED600B818F4 /* TV Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8251944E2033DED600B818F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		825194502033DED600B818F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		825194582033DED600B818F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8251945B2033DED600B818F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8251945D2033DED600B818F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		825194632033DFCD00B818F4 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		C475D92DDD93BF51923E36D8 /* Pods-TV Core Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TV Core Data.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TV Core Data/Pods-TV Core Data.debug.xcconfig"; sourceTree = "<group>"; };
+		D725EFD045ADFB5273DCA66F /* Pods_TV_Core_Data.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TV_Core_Data.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AB5E33DB93B07F93352614 /* Pods_TV_Core_Data.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06BC731A093BDAFA7BC6B487 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C475D92DDD93BF51923E36D8 /* Pods-TV Core Data.debug.xcconfig */,
+				78AFCDF6B7A90A7A724497B7 /* Pods-TV Core Data.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		825194422033DED600B818F4 = {
 			isa = PBXGroup;
 			children = (
 				8251944D2033DED600B818F4 /* TV Core Data */,
 				8251944C2033DED600B818F4 /* Products */,
+				06BC731A093BDAFA7BC6B487 /* Pods */,
+				D094E709E4A21797F8CE999F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +81,17 @@
 				8251945A2033DED600B818F4 /* LaunchScreen.storyboard */,
 				8251945D2033DED600B818F4 /* Info.plist */,
 				825194552033DED600B818F4 /* TV_Core_Data.xcdatamodeld */,
+				825194632033DFCD00B818F4 /* CoreDataHandler.swift */,
 			);
 			path = "TV Core Data";
+			sourceTree = "<group>";
+		};
+		D094E709E4A21797F8CE999F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D725EFD045ADFB5273DCA66F /* Pods_TV_Core_Data.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 825194602033DED600B818F4 /* Build configuration list for PBXNativeTarget "TV Core Data" */;
 			buildPhases = (
+				04FF17DC0962AA58D0CA547F /* [CP] Check Pods Manifest.lock */,
 				825194472033DED600B818F4 /* Sources */,
 				825194482033DED600B818F4 /* Frameworks */,
 				825194492033DED600B818F4 /* Resources */,
+				C1BCDB196ED51A6D848AF98E /* [CP] Embed Pods Frameworks */,
+				3A43243942B46291A3AC7A50 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04FF17DC0962AA58D0CA547F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TV Core Data-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A43243942B46291A3AC7A50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TV Core Data/Pods-TV Core Data-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1BCDB196ED51A6D848AF98E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TV Core Data/Pods-TV Core Data-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TV Core Data/Pods-TV Core Data-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		825194472033DED600B818F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				825194572033DED600B818F4 /* TV_Core_Data.xcdatamodeld in Sources */,
+				825194642033DFCD00B818F4 /* CoreDataHandler.swift in Sources */,
 				825194512033DED600B818F4 /* ViewController.swift in Sources */,
 				8251944F2033DED600B818F4 /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +363,7 @@
 		};
 		825194612033DED600B818F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C475D92DDD93BF51923E36D8 /* Pods-TV Core Data.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +378,7 @@
 		};
 		825194622033DED600B818F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78AFCDF6B7A90A7A724497B7 /* Pods-TV Core Data.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
